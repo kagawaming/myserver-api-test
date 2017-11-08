@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linkedin.pegasus:r2-disruptor:11.0.17">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/r2-disruptor/11.0.17/fe90e07197964738a21ba6382a900941d18e250f/r2-disruptor-11.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/r2-disruptor/11.0.17/664331670fbc0623f2864694d2acf433517c92fa/r2-disruptor-11.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

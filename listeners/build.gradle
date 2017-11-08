@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+dependencies {
+  compile spec.javax.servlet.servletApi
+  compile spec.linkedin.pegasus.d2
+  compile spec.springframework.springWeb
+}

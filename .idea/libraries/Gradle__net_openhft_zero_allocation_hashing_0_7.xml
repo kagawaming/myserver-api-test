@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.openhft:zero-allocation-hashing:0.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.openhft/zero-allocation-hashing/0.7/21c7ee3440a15d8a79e0ce07e5cf5f6cc8a1cdff/zero-allocation-hashing-0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.openhft/zero-allocation-hashing/0.7/c61267908e5044ad0e800b13e577084fe2bb2c2d/zero-allocation-hashing-0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linkedin.pegasus:restli-disruptor:11.0.17">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/restli-disruptor/11.0.17/dc85aa2275ee1092dfc7903c08cc1098c9ab631d/restli-disruptor-11.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/restli-disruptor/11.0.17/64c1385ce9a69cdce8fa95e5fa2b8f81259d73aa/restli-disruptor-11.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

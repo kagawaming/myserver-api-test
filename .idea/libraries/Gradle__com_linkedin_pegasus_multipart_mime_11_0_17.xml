@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linkedin.pegasus:multipart-mime:11.0.17">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/multipart-mime/11.0.17/ce4652ecb9bd181d38f823a191dd7358bdc7d236/multipart-mime-11.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/multipart-mime/11.0.17/e6e98a86369f78bc7b76292e47f1b9560e601416/multipart-mime-11.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

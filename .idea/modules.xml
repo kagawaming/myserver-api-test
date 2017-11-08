@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/listeners/listeners.iml" filepath="$PROJECT_DIR$/.idea/modules/listeners/listeners.iml" group="listeners" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/listeners/listeners_main.iml" filepath="$PROJECT_DIR$/.idea/modules/listeners/listeners_main.iml" group="listeners" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/listeners/listeners_test.iml" filepath="$PROJECT_DIR$/.idea/modules/listeners/listeners_test.iml" group="listeners" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserver-api/myserver-api.iml" filepath="$PROJECT_DIR$/.idea/modules/myserver-api/myserver-api.iml" group="myserver-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserver-api-integTest/myserver-api-integTest.iml" filepath="$PROJECT_DIR$/.idea/modules/myserver-api-integTest/myserver-api-integTest.iml" group="myserver-api-integTest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserver-api-integTest/myserver-api-integTest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/myserver-api-integTest/myserver-api-integTest_main.iml" group="myserver-api-integTest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserver-api-integTest/myserver-api-integTest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/myserver-api-integTest/myserver-api-integTest_test.iml" group="myserver-api-integTest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserver-api-war/myserver-api-war.iml" filepath="$PROJECT_DIR$/.idea/modules/myserver-api-war/myserver-api-war.iml" group="myserver-api-war" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserver-api-war/myserver-api-war_main.iml" filepath="$PROJECT_DIR$/.idea/modules/myserver-api-war/myserver-api-war_main.iml" group="myserver-api-war" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserver-api-war/myserver-api-war_test.iml" filepath="$PROJECT_DIR$/.idea/modules/myserver-api-war/myserver-api-war_test.iml" group="myserver-api-war" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserver-api/myserver-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/myserver-api/myserver-api_main.iml" group="myserver-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserver-api/myserver-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/myserver-api/myserver-api_test.iml" group="myserver-api" />
+      <module fileurl="file://$PROJECT_DIR$/myserver-api_trunk.iml" filepath="$PROJECT_DIR$/myserver-api_trunk.iml" />
+    </modules>
+  </component>
+</project>

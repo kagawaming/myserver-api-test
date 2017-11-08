@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linkedin.pegasus:data-transform:11.0.17">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/data-transform/11.0.17/c3dccf121708e2edde1d5f860fde06bb994e7cd2/data-transform-11.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/data-transform/11.0.17/7ea1cbdcf66f698c818a84c95ab267c0bb870bc0/data-transform-11.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linkedin.parseq:parseq:2.6.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.parseq/parseq/2.6.4/ea1fbe37e408dae5cbf24c0a71f57ff13b52fa94/parseq-2.6.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.parseq/parseq/2.6.4/fef5528194421d6da188ef342f2abd30dc48bf04/parseq-2.6.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

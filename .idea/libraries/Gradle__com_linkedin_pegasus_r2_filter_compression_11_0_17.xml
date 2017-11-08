@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linkedin.pegasus:r2-filter-compression:11.0.17">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/r2-filter-compression/11.0.17/1200754388610fb698c1f84141372cd881b8ec15/r2-filter-compression-11.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/r2-filter-compression/11.0.17/11d201dc5ae7e92e479acde1cc1db4de3af5ebcb/r2-filter-compression-11.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

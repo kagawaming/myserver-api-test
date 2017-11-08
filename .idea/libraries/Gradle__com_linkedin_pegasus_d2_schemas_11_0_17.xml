@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linkedin.pegasus:d2-schemas:11.0.17">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/d2-schemas/11.0.17/e18a96e766be5ec54d52512d79c74faa6a62d641/d2-schemas-11.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/d2-schemas/11.0.17/4e408402cf14158cb82b56aa1f9827093a9105cc/d2-schemas-11.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

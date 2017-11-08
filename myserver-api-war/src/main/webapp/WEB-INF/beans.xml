@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-3.0.xsd"
+       default-lazy-init="true">
+
+    <!-- This scan is only used to find the services component. -->
+    <!--context:component-scan base-package="com.newsoftvalley.myserver.api.rest.services" /-->
+
+    <!-- BEGIN:   abcService :: abcClient :: restClient -->
+    <bean id="abcService" class="com.mqiu.myserver.api.rest.services.AbcService">
+        <constructor-arg ref="abcClient" />
+    </bean>
+
+    <bean id="abcClient" class="com.mqiu.myserver.api.rest.clients.async.AbcClient">
+        <constructor-arg ref="parSeqRestClient" />
+    </bean>
+
+    <bean id="parSeqRestClient" class="com.linkedin.restli.client.ParSeqRestClient">
+        <constructor-arg name="restClient" ref="restClient" />
+    </bean>
+
+    <bean id="restClient" class="com.linkedin.restli.client.RestClient">
+        <constructor-arg ref="d2Client" />
+        <constructor-arg value="d2://" />
+    </bean>
+
+    <bean id="d2Client" class="com.linkedin.d2.balancer.D2Client"
+            factory-bean="d2ClientFactory" factory-method="createInstance">
+        <constructor-arg name="zkHosts" value="localhost:2181" />
+        <constructor-arg name="zkSessionTimeoutInMillisecond" value="5000" />
+        <constructor-arg name="zkStartupTimeoutInMillisecond" value="5000" />
+        <constructor-arg name="lbWaitTimeoutInMillisecond" value="5000" />
+        <constructor-arg name="flagFile" value="/tmp/suppressZkFlag"/>
+        <constructor-arg name="basePath" value="/d2" />
+        <constructor-arg name="fsBasePath" value="/tmp/backup"/>
+    </bean>
+
+    <bean id="d2ClientFactory" class="com.mqiu.myserver.api.rest.clients.sync.D2ClientFactory" />
+
+    <!--
+    <bean id="restClient" class="com.linkedin.restli.client.RestClient">
+        <constructor-arg ref="r2Client" />
+        <constructor-arg value="http://localhost:7071/myserver-backend/" />
+    </bean>
+
+    <bean id="r2Client" class="com.linkedin.r2.transport.common.bridge.client.TransportClientAdapter">
+        <constructor-arg ref="transportClient" />
+    </bean>
+
+    <bean id="transportClient" class="com.linkedin.r2.transport.http.client.HttpClientFactory.FactoryClient"
+          factory-bean="httpClientFactory" factory-method="getClient">
+        <constructor-arg>
+            <map>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="httpClientFactory" class="com.linkedin.r2.transport.http.client.HttpClientFactory" />
+    !-->
+    <!-- END:   abcService :: abcClient :: restClient -->
+
+    <!-- BEGIN: RestliHttpRequestHandler -->
+    <bean id="MyServlet" class="com.newsoftvalley.myserver.handler.MyRestliHttpRequestHandler">
+        <constructor-arg ref="restLiConfig" />
+        <constructor-arg ref="springInjectResourceFactory"/>
+        <constructor-arg ref="filterChain" />
+        <constructor-arg ref="engine" />
+    </bean>
+
+    <bean id="restLiConfig" class="com.linkedin.restli.server.RestLiConfig">
+        <property name="resourcePackageNames" value="com.newsoftvalley.myserver.api.rest.resources" />
+    </bean>
+
+    <bean id="springInjectResourceFactory" class="com.linkedin.restli.server.spring.SpringInjectResourceFactory" />
+
+    <bean id="filterChain" class="com.linkedin.r2.filter.FilterChains" factory-method="createRestChain">
+        <constructor-arg>
+            <list>
+                <ref bean="loggingFilter"/>
+                <ref bean="compressionFilter"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="loggingFilter" class="com.linkedin.r2.filter.logging.SimpleLoggingFilter" />
+
+    <bean id="compressionFilter" class="com.linkedin.r2.filter.compression.ServerCompressionFilter" >
+        <constructor-arg value="snappy" />
+    </bean>
+
+    <bean id="engine" class="com.linkedin.parseq.Engine"
+          factory-bean="engineBuilder" factory-method="build">
+    </bean>
+
+    <bean id="engineBuilder" class="com.linkedin.parseq.EngineBuilder">
+        <property name="taskExecutor" ref="taskExecutor"/>
+        <property name="timerScheduler" ref="timerScheduler"/>
+    </bean>
+
+    <bean id="taskExecutor" class="java.util.concurrent.Executors"
+          factory-method="newFixedThreadPool">
+        <constructor-arg value="1" />
+    </bean>
+
+    <bean id="timerScheduler" class="java.util.concurrent.Executors"
+          factory-method="newSingleThreadScheduledExecutor">
+    </bean>
+
+    <!-- END: RestliHttpRequestHandler -->
+
+</beans>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linkedin.pegasus:degrader:11.0.17">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/degrader/11.0.17/3a4fee4b9d9f41c72ff6dcd53367f92fd6a3b60/degrader-11.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linkedin.pegasus/degrader/11.0.17/584045a0c2ba749dedcc5ae75667ea951cd94bae/degrader-11.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
